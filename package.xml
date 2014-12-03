@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package>
+  <name>crob_gazebo_models</name>
+  <version>1.0.0</version>
+  <description>Gazebo models used in packages being developed at Centre for Robotics and Intelligent Systems (CROB)</description>
+  <maintainer email="carloscosta.cmcc@gmail.com">Carlos Miguel Correia da Costa</maintainer>
+  <license>BSD</license>
+  <author email="carloscosta.cmcc@gmail.com">Carlos Miguel Correia da Costa</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>gazebo_ros</run_depend>
+</package>
