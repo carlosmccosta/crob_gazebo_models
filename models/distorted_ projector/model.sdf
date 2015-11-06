@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="distorted_projector">
+    <link name="projector_link_2">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+      <sensor name="camera" type="camera">
+        <camera>
+          <horizontal_fov>1.81982</horizontal_fov>
+          <image>
+            <width>1280</width>
+            <height>800</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+          <distortion>
+            <k1>-0.0216245</k1>
+            <k2>0.00355186</k2>
+            <k3>-0.433392</k3>
+            <p1>-0.00480772</p1>
+            <p2>0.000386425</p2>
+            <center>0.976991 0.490102</center>
+            <--! <center>0.509898 0.023009</center> -->
+          </distortion>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+      </sensor>
+    </link>
+  </model>
+</sdf>
