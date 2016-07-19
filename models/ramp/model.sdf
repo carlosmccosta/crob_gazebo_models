@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <sdf version="1.4">
-  <model name="beam_weld_u_side">
+  <model name="ramp">
     <static>true</static>
     <link name="link">
       <inertial>
-        <mass>1000</mass>
+        <mass>25</mass>
       </inertial>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://beam_weld_u_side/meshes/beam_weld_u_side.stl</uri>
+            <uri>model://ramp/meshes/ramp.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -17,7 +17,7 @@
         <transparency>0.0</transparency>
         <geometry>
           <mesh>
-            <uri>model://beam_weld_u_side/meshes/beam_weld_u_side.stl</uri>
+            <uri>model://ramp/meshes/ramp.stl</uri>
           </mesh>
         </geometry>
       </visual>

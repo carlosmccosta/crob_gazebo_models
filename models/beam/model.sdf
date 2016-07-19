@@ -14,7 +14,7 @@
         </geometry>
       </collision>
       <visual name="visual">
-        <transparency>1.0</transparency>
+        <transparency>0.0</transparency>
         <geometry>
           <mesh>
             <uri>model://beam/meshes/beam.stl</uri>
